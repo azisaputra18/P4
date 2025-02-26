@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Glowing Inputs Login Form UI</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="card-foto">
+         <img src="Astronot.png" alt="Astronot">
+             <div class="text-card"> 
+               <p>Terbang Dan Melampuinya</p> 
+                <p>Bersama Kami Jasa Layanan Internet</p> 
+          </div>
+      </div>
+      <div class="login-form">
+         <div class="text"> LOGIN </div>
+         <form>
+            <div class="field">
+               <div class="fas fa-envelope"></div>
+               <input type="text" placeholder="Email or Phone">
+            </div>
+            <div class="field">
+               <div class="fas fa-lock" onclick="showHide()"> </div>
+               <input type="password"  id="Password" placeholder="Password">
+                
+            </div>
+            <button>LOGIN</button>
+            <div class="link">
+               Belum Mempunyai Akun ?
+               <a href="Register.html">Register Sekarang</a>
+            </div>
+         </form>
+      </div>
+      
+   </body>
+<script>
+function showHide() {
+  var inputan = document.getElementById("Password");
+  if (inputan.type === "password") {
+    inputan.type = "text";
+  } else {
+    inputan.type = "password";
+  }
+} 
+</script>
+</html>
